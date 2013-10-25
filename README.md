@@ -1,4 +1,0 @@
-Orange-Conky
-============
-
-Worthless shit
