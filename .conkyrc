@@ -1,0 +1,63 @@
+# -- Conky -- #
+# -- conky config by MuyBien -- #
+background yes
+cpu_avg_samples 2
+pad_percents 2			
+short_units yes			
+stippled_borders 3
+total_run_times 0
+update_interval 1.0
+use_spacer right
+net_avg_samples 2
+no_buffers yes
+uppercase no
+imlib_cache_size 0
+
+uppercase no
+override_utf8_locale yes
+use_xft yes
+text_buffer_size 8000
+xftalpha 0.75
+xftfont Comic Sans MS:size=9
+
+own_window yes
+own_window_colour 000000	# Black
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_transparent yes
+own_window_type normal 	## normal
+own_window_title conky2
+
+double_buffer yes
+draw_borders no
+draw_graph_borders no
+draw_outline no
+draw_shades no
+
+color0 000000			# black
+color1 FFFFFF			# White
+default_color 000000		
+default_outline_color 000000 	# Black
+default_shade_color 000000	# Black
+
+# Layout
+alignment top_right
+gap_x 591
+gap_y 313
+max_specials 1024
+max_user_text 10000
+maximum_width 425
+minimum_size 425 450
+border_margin 1
+border_width 1
+
+# -- Load Lua -- #
+lua_load ~/.conky/rings.lua
+lua_draw_hook_pre ring_stats
+
+
+TEXT
+${color0}${font Purisa:bold:size=8}${voffset 69}${goto 175} CPU1${font}
+${color1}${font Purisa:bold:size=8}${voffset 10}${goto 175} CPU2${font}
+${color1}${font Purisa:bold:size=8}${voffset 18}${goto 175} RAM${font}
+${color1}${font Purisa:bold:size=8}${voffset 12}${goto 180} UP${font}
+${color1}${font Purisa:bold:size=8}${voffset 39}${goto 197} DOWN${font}
