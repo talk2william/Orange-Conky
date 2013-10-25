@@ -1,5 +1,5 @@
 # -- Conky -- #
-# -- conky config by MuyBien -- #
+# -- conky config by Arpan Biswas -- #
 background yes
 cpu_avg_samples 2
 pad_percents 2			
